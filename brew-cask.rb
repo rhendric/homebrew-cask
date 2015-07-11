@@ -31,7 +31,7 @@ end
 class BrewCask < Formula
   homepage "https://github.com/caskroom/homebrew-cask/"
   url "https://github.com/caskroom/homebrew-cask.git", :tag => "v#{HBC_VERSION}"
-  head "https://github.com/caskroom/homebrew-cask.git", :branch => "master"
+  head "#{HOMEBREW_LIBRARY}/Taps/caskroom/homebrew-cask", :using => :git, :branch => "master"
 
   skip_clean "bin"
 
